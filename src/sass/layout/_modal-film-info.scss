@@ -5,6 +5,7 @@
   width: 100vw;
   height: 100vh;
   background-color: #000000;
+  // color: #000000;
   // opacity: 0.25;
   z-index: 999;
 
@@ -35,7 +36,6 @@
 
         .film-name-heading {
           margin-bottom: 20px;
-          font-style: normal;
           font-weight: 500;
           font-size: 20px;
           line-height: 23px;
@@ -43,19 +43,20 @@
         }
 
         .film-info-list {
+          padding-inline-start: 0;
+
           .film-info-list-item {
             display: flex;
+            justify-content: space-between;
 
             .film-info-text-left {
-              font-style: normal;
               font-weight: 500;
               font-size: 12px;
               line-height: 1.33;
-              color: #8C8C8C;
+              color: #8c8c8c;
             }
 
             .film-info-text-right {
-              font-style: normal;
               font-weight: 500;
               font-size: 12px;
               line-height: 1.33;
@@ -67,6 +68,16 @@
 
             .film-info-text-right-numbers {
               line-height: 14px;
+
+              .film-rating-left {
+                width: 36px;
+                height: 16px;
+                border-radius: 5px;
+                background-color: #FF6B01;
+                color: #ffffff;
+                display: inline-block;
+                text-align: center;
+              }
             }
           }
         }
@@ -77,7 +88,6 @@
 
         .about-heading {
           margin-bottom: 10px;
-          font-style: normal;
           font-weight: 500;
           font-size: 12px;
           line-height: 1.33;
@@ -86,7 +96,6 @@
 
         .about-text {
           margin-bottom: 21px;
-          font-style: normal;
           font-weight: 500;
           font-size: 12px;
           line-height: 1.67;
